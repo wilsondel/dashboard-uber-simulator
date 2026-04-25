@@ -1,0 +1,12 @@
+services:
+  dashboard:
+    build: .
+    container_name: ridesim-dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      POSTGRES_HOST: 54.209.228.100
+      POSTGRES_DB: ridesim
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    restart: unless-stopped
