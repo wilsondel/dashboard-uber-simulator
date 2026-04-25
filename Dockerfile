@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app.py .
 
-ENV POSTGRES_HOST=54.209.228.100 \
+ENV POSTGRES_HOST=18.204.73.160 \
     POSTGRES_DB=ridesim \
     POSTGRES_USER=postgres \
     POSTGRES_PASSWORD=postgres
